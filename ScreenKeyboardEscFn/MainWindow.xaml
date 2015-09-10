@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScreenKeyboardEscFn"
         mc:Ignorable="d"
-        Title="EscFn Keyboard" Height="70" Width="640"
+        Title="EscFn Keyboard" Height="70" Width="720"
         WindowStyle="ToolWindow"  ResizeMode="NoResize"
         Topmost="True" HorizontalAlignment="Left" VerticalAlignment="Top"
         Loaded="WindowMain_Loaded" Closing="WindowMain_Closing">
@@ -15,22 +15,24 @@
             <RowDefinition Height="20*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
-            <ColumnDefinition Width="30*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
         </Grid.ColumnDefinitions>
         <Button x:Name="buttonEsc" Content="Esc" Grid.Column="0" Grid.Row="0" 
             HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonEsc_Click" />
@@ -64,5 +66,9 @@
             HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonScroll_Click" />
         <Button x:Name="buttonPause" Content="Pause" Grid.Column="15" Grid.Row="0" 
             HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonPause_Click" />
+        <Button x:Name="buttonIns" Content="Ins" Grid.Column="16" Grid.Row="0" 
+            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonIns_Click" />
+        <Button x:Name="buttonDel" Content="Del" Grid.Column="17" Grid.Row="0" 
+            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonDel_Click" />
     </Grid>
 </Window>

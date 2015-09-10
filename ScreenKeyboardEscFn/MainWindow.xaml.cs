@@ -59,6 +59,8 @@ namespace ScreenKeyboardEscFn
 		private const int VK_PAUSE = 0x13;
 		private const int VK_SNAPSHOT = 0x2c;
 		private const int VK_SCROLL = 0x91;
+		private const int VK_INSERT = 0x2d;
+		private const int VK_DELETE = 0x2e;
 
 		protected override void OnSourceInitialized(EventArgs e)
 		{
@@ -177,6 +179,16 @@ namespace ScreenKeyboardEscFn
 		private void buttonPause_Click(object sender, RoutedEventArgs e)
 		{
 			keybd_event(VK_PAUSE, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+		}
+
+		private void buttonIns_Click(object sender, RoutedEventArgs e)
+		{
+			keybd_event(VK_INSERT, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+		}
+
+		private void buttonDel_Click(object sender, RoutedEventArgs e)
+		{
+			keybd_event(VK_DELETE, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
 		}
 
 		private void WindowMain_Closing(object sender, EventArgs e)
