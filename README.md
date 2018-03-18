@@ -1,3 +1,6 @@
+# 修改让它适用于玩小黄油
+增加了上下左右键盘
+
 # ScreenKeyboardEscFn
 Screen keyboard with Esc, Fn keys (F1 to F12), and other keys only.
 Might be useful for those who wanted to use small clamshell PC

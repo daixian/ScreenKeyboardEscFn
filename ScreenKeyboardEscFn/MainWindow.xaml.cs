@@ -60,9 +60,15 @@ namespace ScreenKeyboardEscFn
 		private const int VK_SNAPSHOT = 0x2c;
 		private const int VK_SCROLL = 0x91;
 		private const int VK_INSERT = 0x2d;
-		private const int VK_DELETE = 0x2e;
+        private const int VK_DELETE = 0x2e;
+        private const int VK_LEFT = 0x25;
+        private const int VK_UP = 0x26;
+        private const int VK_RIGHT = 0x27;
+        private const int VK_DOWN = 0x28;
+        private const int VK_RETURN = 0x0D;
+        private const int VK_SPACE = 0x20;
 
-		protected override void OnSourceInitialized(EventArgs e)
+        protected override void OnSourceInitialized(EventArgs e)
 		{
 			base.OnSourceInitialized(e);
 
@@ -93,8 +99,8 @@ namespace ScreenKeyboardEscFn
 			int heightTaskBar = heightScreen - (int)SystemParameters.WorkArea.Height;
 
 			int numButtons = this.LayoutRoot.Children.OfType<UIElement>().Count(elem => elem is Button);
-			this.Width = widthScreen;
-			this.Height = widthScreen / numButtons + SystemParameters.WindowCaptionHeight;
+			//this.Width = widthScreen;
+		   //this.Height = widthScreen / numButtons + SystemParameters.WindowCaptionHeight;
 			
 			this.Top = heightScreen - this.Height - heightTaskBar;
 			this.Left = 0;
@@ -196,6 +202,97 @@ namespace ScreenKeyboardEscFn
 			this.Hide();
 			var argsEvent = (CancelEventArgs)e;
 			argsEvent.Cancel = true;
+          
 		}
-	}
+
+        private void buttonUp_Click(object sender, RoutedEventArgs e)
+        {
+            //keybd_event(VK_UP, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+
+        private void buttonDown_Click(object sender, RoutedEventArgs e)
+        {
+            //keybd_event(VK_DOWN, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+
+        private void buttonLeft_Click(object sender, RoutedEventArgs e)
+        {
+           // keybd_event(VK_LEFT, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+
+        private void buttonRight_Click(object sender, RoutedEventArgs e)
+        {
+            //keybd_event(VK_RIGHT, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+
+        private void buttonSpace_Click(object sender, RoutedEventArgs e)
+        {
+            //keybd_event(VK_SPACE, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+
+        private void buttonEnter_Click(object sender, RoutedEventArgs e)
+        {
+           // keybd_event(VK_RETURN, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+
+        private void buttonUp_TouchEnter(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_UP, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+        private void buttonUp_TouchLeave(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, (UIntPtr)0);
+         
+        }
+
+
+        private void buttonDown_TouchEnter(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_DOWN, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+        private void buttonDown_TouchLeave(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_DOWN, 0, KEYEVENTF_KEYUP, (UIntPtr)0);
+        }
+
+
+        private void buttonLeft_TouchEnter(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_LEFT, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+        private void buttonLeft_TouchLeave(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_LEFT, 0, KEYEVENTF_KEYUP, (UIntPtr)0);
+        }
+
+
+        private void buttonRight_TouchEnter(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_RIGHT, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+        private void buttonRight_TouchLeave(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_RIGHT, 0, KEYEVENTF_KEYUP, (UIntPtr)0);
+        }
+
+
+        private void buttonSpace_TouchEnter(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_SPACE, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+        private void buttonSpace_TouchLeave(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_SPACE, 0, KEYEVENTF_KEYUP, (UIntPtr)0);
+        }
+
+        private void buttonEnter_TouchEnter(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_RETURN, 0, KEYEVENTF_EXTENDEDKEY, (UIntPtr)0);
+        }
+
+        private void buttonEnter_TouchLeave(object sender, TouchEventArgs e)
+        {
+            keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, (UIntPtr)0);
+        }
+    }
 }

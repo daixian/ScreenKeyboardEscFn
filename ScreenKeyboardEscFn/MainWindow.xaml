@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScreenKeyboardEscFn"
         mc:Ignorable="d"
-        Title="EscFn Keyboard" Height="70" Width="720"
+        Title="EscFn Keyboard" Height="357.833" Width="728.5"
         WindowStyle="ToolWindow"  ResizeMode="NoResize"
         Topmost="True" HorizontalAlignment="Left" VerticalAlignment="Top"
         Loaded="WindowMain_Loaded" Closing="WindowMain_Closing">
     <!-- WindowStyle="None"  AllowsTransparency="True" ResizeMode="CanResizeWithGrip" -->
-    <Grid x:Name="LayoutRoot" Background="White">
+    <Grid x:Name="LayoutRoot" Background="White" Margin="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="20*" />
         </Grid.RowDefinitions>
@@ -35,40 +35,56 @@
             <ColumnDefinition Width="40*" />
         </Grid.ColumnDefinitions>
         <Button x:Name="buttonEsc" Content="Esc" Grid.Column="0" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonEsc_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonEsc_Click" Height="47.5" />
         <Button x:Name="buttonF1" Content="F1" Grid.Column="1" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF1_Click" />
+            HorizontalAlignment="Stretch" Click="buttonF1_Click" Height="47.5" VerticalAlignment="Top" />
         <Button x:Name="buttonF2" Content="F2" Grid.Column="2" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF2_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF2_Click" Height="47.5" />
         <Button x:Name="buttonF3" Content="F3" Grid.Column="3" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF3_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF3_Click" Height="47.5" />
         <Button x:Name="buttonF4" Content="F4" Grid.Column="4" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF4_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF4_Click" Height="47.5" />
         <Button x:Name="buttonF5" Content="F5" Grid.Column="5" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF5_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF5_Click" Height="47.5" d:LayoutOverrides="VerticalAlignment" />
         <Button x:Name="buttonF6" Content="F6" Grid.Column="6" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF6_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF6_Click" Height="47.5" />
         <Button x:Name="buttonF7" Content="F7" Grid.Column="7" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF7_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF7_Click" Height="47.5" />
         <Button x:Name="buttonF8" Content="F8" Grid.Column="8" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF8_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF8_Click" Height="47.5" />
         <Button x:Name="buttonF9" Content="F9" Grid.Column="9" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF9_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF9_Click" Height="47.5" />
         <Button x:Name="buttonF10" Content="F10" Grid.Column="10" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF10_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF10_Click" Height="47.5" />
         <Button x:Name="buttonF11" Content="F11" Grid.Column="11" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF11_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF11_Click" Height="47.5" />
         <Button x:Name="buttonF12" Content="F12" Grid.Column="12" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonF12_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonF12_Click" Height="47.5" />
         <Button x:Name="buttonPrtSc" Content="PrtSc" Grid.Column="13" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonPrtSc_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonPrtSc_Click" Height="47.5" />
         <Button x:Name="buttonScroll" Content="Scroll" Grid.Column="14" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonScroll_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonScroll_Click" Height="47.5" />
         <Button x:Name="buttonPause" Content="Pause" Grid.Column="15" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonPause_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonPause_Click" Height="47.5" />
         <Button x:Name="buttonIns" Content="Ins" Grid.Column="16" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonIns_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonIns_Click" Height="47.5" />
         <Button x:Name="buttonDel" Content="Del" Grid.Column="17" Grid.Row="0" 
-            HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="buttonDel_Click" />
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="buttonDel_Click" Height="47.5" />
+        <Button x:Name="buttonLeftUp" Content="左上" Grid.Column="0" Grid.Row="0" 
+            HorizontalAlignment="Stretch" Margin="0,47.5,0,0" Grid.ColumnSpan="4" Height="133.5" VerticalAlignment="Top" />
+        <Button x:Name="buttonUp" Content="上" Grid.Column="4" Grid.Row="0" 
+            HorizontalAlignment="Stretch" Margin="0,47.5,0,0" Grid.ColumnSpan="4" Height="133.5" VerticalAlignment="Top" Click="buttonUp_Click" TouchEnter="buttonUp_TouchEnter" TouchLeave="buttonUp_TouchLeave" />
+        <Button x:Name="buttonRightUp" Content="右上" Grid.Column="8" Grid.Row="0" 
+            HorizontalAlignment="Stretch" Margin="0,47.5,0,0" Grid.ColumnSpan="4" Height="133.5" VerticalAlignment="Top" />
+        <Button x:Name="buttonLeft" Content="左" Grid.Row="0" 
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="149" Grid.ColumnSpan="4" Margin="0,181,0,0" Click="buttonLeft_Click" TouchEnter="buttonLeft_TouchEnter" TouchLeave="buttonLeft_TouchLeave" />
+        <Button x:Name="buttonDown" Content="下" Grid.Row="0" 
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="149" Grid.ColumnSpan="4" Grid.Column="4" Margin="0,181,0,0" Click="buttonDown_Click" TouchEnter="buttonDown_TouchEnter" TouchLeave="buttonDown_TouchLeave" />
+        <Button x:Name="buttonRight" Content="右" Grid.Row="0" 
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="149" Grid.ColumnSpan="4" Grid.Column="8" Margin="0,181,0,0" Click="buttonRight_Click" TouchEnter="buttonRight_TouchEnter" TouchLeave="buttonRight_TouchLeave" />
+        <Button x:Name="buttonSpace" Content="空格" Grid.Row="0" 
+            HorizontalAlignment="Stretch" Margin="0,47.5,0,0" Grid.ColumnSpan="6" Grid.Column="12" Height="133.5" VerticalAlignment="Top" Click="buttonSpace_Click" TouchEnter="buttonSpace_TouchEnter" TouchLeave="buttonSpace_TouchLeave" />
+        <Button x:Name="buttonEnter" Content="回车" Grid.Row="0" 
+            HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="149" Grid.ColumnSpan="6" Grid.Column="12" Margin="0,181,0,0" Click="buttonEnter_Click" TouchEnter="buttonEnter_TouchEnter" TouchLeave="buttonEnter_TouchLeave" />
     </Grid>
 </Window>
