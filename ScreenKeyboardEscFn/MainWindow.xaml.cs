@@ -241,8 +241,7 @@ namespace ScreenKeyboardEscFn
         }
         private void buttonUp_TouchLeave(object sender, TouchEventArgs e)
         {
-            keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, (UIntPtr)0);
-         
+            keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, (UIntPtr)0);       
         }
 
 
